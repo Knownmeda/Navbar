@@ -145,7 +145,7 @@ header .navbar a:active
 
 .home a:hover
 {
-    box-shadow: 0 0 5px #0396ff, 0 0 15px #0396ff, 0 0 25px #0396ff;
+    box-shadow: 0 0 4px #0396ff, 0 0 15px #0396ff, 0 0 25px #0396ff;
     transition-duration: 0.2s;
 }
 
