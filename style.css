@@ -428,7 +428,7 @@ footer .container .social a p:hover
         padding: 12px 5px;
         text-align: center;
         color: #0396ff;
-        border: 1px solid rgb(153, 153, 153, 0.1);
+        border: 1px solid rgba(150, 150, 150, 0.15);
     }
 
     header .dropdown .nav-navbar a:hover
@@ -494,7 +494,7 @@ footer .container .social a p:hover
 
     .achievment p
     {
-        padding-bottom: 0px;
+        padding-bottom: 0;
     }
 
     /* Responsive Footernya */
