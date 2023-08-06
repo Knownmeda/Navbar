@@ -154,6 +154,7 @@ header .dropdown
 .about
 {
     padding: 10%;
+    margin-top: 20px;
 }
 
 .about h2
@@ -467,5 +468,9 @@ footer .container .social a p:hover
 
 @media screen and (max-width: 500px)
 {
-    
+    /* Responsive Footernya */
+    footer .container .social
+    {
+        width: 60%;
+    }
 }
