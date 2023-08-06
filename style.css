@@ -93,7 +93,7 @@ header .dropdown
     display: row;
     text-align: center;
     padding: 10rem 0rem;
-    padding-top: 10rem;
+    padding-top: 15rem;
     justify-content: center;
 
 }
@@ -403,7 +403,7 @@ footer .container .social a p:hover
         display: block;
         background-color: #fff;
         right: -250px;
-        top: 50px;
+        top: 60px;
         overflow: hidden;
         transition: 0.3s;
     }
