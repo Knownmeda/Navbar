@@ -220,12 +220,13 @@ header .dropdown
 {
     font-size: 2.5rem;
     padding: 36px;
+    padding-top: 90px;
 }
 
 .achievement p
 {
     font-size: 1.3rem;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 .end
@@ -469,6 +470,11 @@ footer .container .social a p:hover
 @media screen and (max-width: 500px)
 {
     /* Responsive Sectionnya */
+    .about h2
+    {
+        margin-top: 40px;
+    }
+
     .about .logo
     {
         flex-direction: column;
@@ -479,6 +485,16 @@ footer .container .social a p:hover
         margin: 5%;
         width: 45%;
         height: 45%;
+    }
+
+    .achievement h2
+    {
+        margin-top: 50px;
+    }
+
+    .achievment p
+    {
+        padding-bottom: 0px;
     }
 
     /* Responsive Footernya */
