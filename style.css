@@ -468,6 +468,19 @@ footer .container .social a p:hover
 
 @media screen and (max-width: 500px)
 {
+    /* Responsive Sectionnya */
+    .about .logo
+    {
+        flex-direction: column;
+    }
+
+    .about .logo img
+    {
+        margin: 5%;
+        width: 45%;
+        height: 45%;
+    }
+
     /* Responsive Footernya */
     footer .container .social
     {
