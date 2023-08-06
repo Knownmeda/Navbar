@@ -368,7 +368,7 @@ footer .container .social a p:hover
     /* Responsive Navbar nya */
     html
     {
-        font-size: 55%;
+        font-size: 75%;
     }
     header
     {
@@ -435,6 +435,10 @@ footer .container .social a p:hover
     }
 
     /* Responsive sectionnya */
+    .home .content img
+    {
+        width: 40%;
+    }
 
      /* Responsive Footernya */
      footer .container
@@ -459,4 +463,9 @@ footer .container .social a p:hover
      {
          padding: 9px;
      }
+}
+
+@media screen and (max-width: 500px)
+{
+    
 }
