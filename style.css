@@ -80,7 +80,39 @@ header .bars
 
 header .dropdown
 {
+    position: absolute;
     display: none;
+    background-color: #fff;
+    right: -250px;
+    top: 60px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+header .dropdown.open
+{
+    right: 0;
+}
+
+header .dropdown .nav-navbar
+{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+header .dropdown .nav-navbar a
+{
+    padding: 12px 5px;
+    text-align: center;
+    color: #0396ff;
+    border: 1px solid rgba(150, 150, 150, 0.15);
+}
+
+header .dropdown .nav-navbar a:hover
+{
+     color: #025088;
 }
 
 /* header / navbar end */
@@ -401,41 +433,9 @@ footer .container .social a p:hover
 
     header .dropdown
     {
-        position: absolute;
         display: block;
-        background-color: #fff;
-        right: -250px;
-        top: 60px;
-        overflow: hidden;
-        transition: 0.3s;
+        top: 53px;
     }
-
-    header .dropdown.open
-    {
-        right: 0;
-    }
-
-    header .dropdown .nav-navbar
-    {
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        width: 200px;
-    }
-
-    header .dropdown .nav-navbar a
-    {
-        padding: 12px 5px;
-        text-align: center;
-        color: #0396ff;
-        border: 1px solid rgba(150, 150, 150, 0.15);
-    }
-
-    header .dropdown .nav-navbar a:hover
-    {
-        color: #025088;
-    }
-
     /* Responsive sectionnya */
     .home .content img
     {
@@ -469,6 +469,38 @@ footer .container .social a p:hover
 
 @media screen and (max-width: 500px)
 {
+
+    /* Responsive Headernya */
+    header
+    {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 7%;
+    background-color: #03a7f8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    } 
+
+    header .logo
+    {
+    display: flex;
+    font-size: 1.7em;
+    color: #fff;
+    font-weight: 600;
+    cursor: default;
+    letter-spacing: 1px;
+    }
+
+    header .bars
+    {
+    font-size: 20px;
+    color: #fff;
+    }
+
     /* Responsive Sectionnya */
     .about h2
     {
