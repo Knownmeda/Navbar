@@ -71,22 +71,16 @@ header .navbar a:active
     transform: scale(0.9);
 }
 
-/* hamburger */
-.hamburger
+header .bars
 {
     display: none;
-    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
 }
 
-.hamburger .bar
+header .dropdown
 {
-    display: flex;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    background-color: #fff;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    display: none;
 }
 
 /* header / navbar end */
@@ -183,7 +177,7 @@ header .navbar a:active
     background-color: #fff;
     padding: 1%;
     border-radius: 15%;
-    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 3px;
+    box-shadow: rgba(0, 0, 0, 0.7) 5px 5px 1px;
     transition: 0.5s;
 }
 
@@ -195,15 +189,15 @@ header .navbar a:active
 .about .logo img:hover
 {
     transform: translate(-5px, -5px);
-    box-shadow: 6px 6px 0px orange, 6px 6px 0px orange, 6px 6px 18px orange;
+    box-shadow: 8px 8px 0px orange, 8px 8px 0px orange, 8px 8px 18px orange;
 }
 .about .logo .css-logo:hover
 {
-    box-shadow: 6px 6px 0px blue, 6px 6px 0px blue, 6px 6px 18px blue;
+    box-shadow: 8px 8px 0px blue, 8px 8px 0px blue, 8px 8px 18px blue;
 }
 .about .logo .javascript-logo:hover
 {
-    box-shadow: 6px 6px 0px yellow, 6px 6px 0px yellow, 6px 6px 18px yellow;
+    box-shadow: 8px 8px 0px yellow, 8px 8px 0px yellow, 8px 8px 18px yellow;
 }
 
 
@@ -348,10 +342,6 @@ footer .container .social a p:hover
         width: 40%;
     }
     
-    .hamburger
-    {
-        display: none;
-    }
 
     /* Responsive Footer nya */
     footer .container
@@ -382,54 +372,66 @@ footer .container .social a p:hover
     }
     header
     {
-        position: relative;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 12px 7%;
     }
     
-    .hamburger
-    {
-        display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2)
-    {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1)
-    {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3)
-    {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-    
     header .navbar
     {
-        position: fixed;
-        left: -100%;
-        top: 70px;
-        gap: 0;
-        flex-direction: column;
-        background-color: #0396ff;
-        width: 100%;
-        text-align: center;
+        display: none;
+    }
+
+    header .bars
+    {
+        display: flex;
+        font-size: 25px;
+    }
+
+    header .bars:active
+    {
+        color: #c5c2c2;
+    }
+
+    /* Dropdown menu nya */
+
+    header .dropdown
+    {
+        position: absolute;
+        display: block;
+        background-color: #fff;
+        right: -250px;
+        top: 50px;
+        overflow: hidden;
         transition: 0.3s;
     }
-    
-    header .navbar a
+
+    header .dropdown.open
     {
-        margin: 16px 0;
+        right: 0;
     }
-    
-    header .navbar.active
+
+    header .dropdown .nav-navbar
     {
-        left: 0;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    header .dropdown .nav-navbar a
+    {
+        padding: 12px 5px;
+        text-align: center;
+        color: #0396ff;
+        border: 1px solid rgb(153, 153, 153, 0.1);
+    }
+
+    header .dropdown .nav-navbar a:hover
+    {
+        color: #025088;
     }
 
     /* Responsive sectionnya */
