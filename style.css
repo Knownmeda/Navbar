@@ -206,7 +206,6 @@ header .dropdown .nav-navbar a:hover
 .about .logo img
 {
     width: 22%;
-    height: 22%;
     background-color: #fff;
     padding: 1%;
     border-radius: 15%;
@@ -362,7 +361,7 @@ footer .container .social a p:hover
 {
     html
     {
-        font-size: 75%;
+        font-size: 90%;
     }
 
     /* Responsive Navbar nya */
@@ -376,6 +375,16 @@ footer .container .social a p:hover
         width: 40%;
     }
     
+    /* Responsive Sectionnya */
+    .about .logo
+    {
+        justify-content: space-between;
+    }
+
+    .about .logo img
+    {
+        width: 30%;
+    }
 
     /* Responsive Footer nya */
     footer .container
@@ -402,7 +411,7 @@ footer .container .social a p:hover
     /* Responsive Navbar nya */
     html
     {
-        font-size: 60%;
+        font-size: 75%;
     }
     header
     {
@@ -434,12 +443,22 @@ footer .container .social a p:hover
     header .dropdown
     {
         display: block;
-        top: 53px;
+        top: 60px;
     }
     /* Responsive sectionnya */
     .home .content img
     {
         width: 40%;
+    }
+
+    .about .logo
+    {
+        justify-content: space-between;
+    }
+
+    .about .logo img
+    {
+        width: 28%;
     }
 
      /* Responsive Footernya */
@@ -469,39 +488,53 @@ footer .container .social a p:hover
 
 @media screen and (max-width: 500px)
 {
-
     /* Responsive Headernya */
     header
     {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 7%;
-    background-color: #03a7f8;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 9999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 7%;
+        background-color: #03a7f8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
     } 
 
     header .logo
     {
-    display: flex;
-    font-size: 1.7em;
-    color: #fff;
-    font-weight: 600;
-    cursor: default;
-    letter-spacing: 1px;
+        display: flex;
+        font-size: 1.7em;
+        color: #fff;
+        font-weight: 600;
+        cursor: default;
+        letter-spacing: 1px;
     }
 
     header .bars
     {
-    font-size: 20px;
-    color: #fff;
+        font-size: 20px;
+        color: #fff;
     }
 
+    header .dropdown
+    {
+        top: 55px;
+    }
     /* Responsive Sectionnya */
+    .home .content img
+    {
+        width: 50%;
+    }
+
+    .home a
+    {
+        font-size: 1.5rem;
+    }
+
+
     .about h2
     {
         margin-top: 40px;
@@ -516,7 +549,6 @@ footer .container .social a p:hover
     {
         margin: 5%;
         width: 45%;
-        height: 45%;
     }
 
     .achievement h2
